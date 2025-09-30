@@ -1,0 +1,23 @@
+{
+  "_resourceType": "scene",
+  "id": "3ed75bb5-a4f8-4382-bf05-6d1b134ad9c6",
+  "_index": 0,
+  "name": "Campfire",
+  "backgroundId": "e445a987-44f6-49a7-a5fa-dac9f2b93652",
+  "tilesetId": "",
+  "width": 20,
+  "height": 18,
+  "type": "ADVENTURE",
+  "paletteIds": [],
+  "spritePaletteIds": [],
+  "collisions": "0074+0f2+0012+0f2+0032+0f2+003+0f2+00d+0f2+003+0f2+009+0f3+0011+0f3+0071+",
+  "autoFadeSpeed": 1,
+  "symbol": "scene_1",
+  "x": 296,
+  "y": 30,
+  "script": [],
+  "playerHit1Script": [],
+  "playerHit2Script": [],
+  "playerHit3Script": [],
+  "playerSpriteSheetId": "1b9154b0-2a7d-425a-b88c-ee5981f5730c"
+}

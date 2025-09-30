@@ -1,0 +1,12 @@
+{
+  "_resourceType": "background",
+  "id": "e445a987-44f6-49a7-a5fa-dac9f2b93652",
+  "name": "cutscene_campfire",
+  "symbol": "bg_cutscene_campfire",
+  "width": 20,
+  "height": 18,
+  "imageWidth": 160,
+  "imageHeight": 144,
+  "filename": "cutscene_campfire.png",
+  "tileColors": "00cc+803+0099+"
+}
