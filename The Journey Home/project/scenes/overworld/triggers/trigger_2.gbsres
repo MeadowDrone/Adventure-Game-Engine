@@ -1,0 +1,82 @@
+{
+  "_resourceType": "trigger",
+  "id": "4c076b1c-fd95-4502-8253-be95b757f021",
+  "name": "",
+  "prefabId": "deda00a7-b2ce-43ad-a272-e9721a7db2b4",
+  "x": 2,
+  "y": 4,
+  "symbol": "trigger_1",
+  "prefabScriptOverrides": {
+    "08d3f6f3-df32-4d1e-bae3-16532cae2755": {
+      "id": "08d3f6f3-df32-4d1e-bae3-16532cae2755",
+      "args": {
+        "condition": {
+          "type": "eq",
+          "valueA": {
+            "type": "variable",
+            "value": "0"
+          },
+          "valueB": {
+            "type": "number",
+            "value": 1
+          }
+        }
+      }
+    },
+    "4964b293-bd63-4ecc-a8b5-57ffaa1106a8": {
+      "id": "4964b293-bd63-4ecc-a8b5-57ffaa1106a8",
+      "args": {
+        "y": {
+          "type": "number",
+          "value": -1
+        }
+      }
+    }
+  },
+  "width": 2,
+  "height": 1,
+  "script": [
+    {
+      "command": "EVENT_IF",
+      "args": {
+        "condition": {
+          "type": "eq",
+          "valueA": {
+            "type": "variable",
+            "value": "0"
+          },
+          "valueB": {
+            "type": "number",
+            "value": 0
+          }
+        },
+        "__collapseElse": false
+      },
+      "children": {
+        "true": [],
+        "false": [
+          {
+            "command": "EVENT_ACTOR_MOVE_TO",
+            "args": {
+              "actorId": "$self$",
+              "x": {
+                "type": "number",
+                "value": 14
+              },
+              "y": {
+                "type": "number",
+                "value": 9
+              },
+              "moveType": "horizontal",
+              "useCollisions": false
+            },
+            "id": "ac46fadb-ab72-4d67-a6a4-f12eb0566c67"
+          }
+        ]
+      },
+      "id": "63df315b-6ac1-4020-b719-4d0d4bafd4cc"
+    }
+  ],
+  "leaveScript": [],
+  "_index": 3
+}

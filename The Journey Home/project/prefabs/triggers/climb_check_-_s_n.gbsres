@@ -1,0 +1,49 @@
+{
+  "_resourceType": "triggerPrefab",
+  "id": "3988ad04-7ef8-4a3d-a436-398a4ed16adf",
+  "name": "Climb Check - S > N",
+  "prefabScriptOverrides": {},
+  "script": [
+    {
+      "command": "EVENT_IF",
+      "args": {
+        "condition": {
+          "type": "eq",
+          "valueA": {
+            "type": "variable",
+            "value": "0"
+          },
+          "valueB": {
+            "type": "number",
+            "value": 0
+          }
+        },
+        "__collapseElse": false
+      },
+      "children": {
+        "true": [],
+        "false": [
+          {
+            "command": "EVENT_ACTOR_MOVE_RELATIVE",
+            "args": {
+              "actorId": "$self$",
+              "x": {
+                "type": "number",
+                "value": 0
+              },
+              "y": {
+                "type": "number",
+                "value": 2
+              },
+              "moveType": "horizontal",
+              "useCollisions": false
+            },
+            "id": "7b756005-8a12-4dc2-b13f-8eaf7a1c352a"
+          }
+        ]
+      },
+      "id": "1d408332-62e8-46b0-af47-6eb80950b349"
+    }
+  ],
+  "leaveScript": []
+}

@@ -1,0 +1,94 @@
+{
+  "_resourceType": "trigger",
+  "id": "f48230fb-8dd4-41ee-822e-f1bbd9370046",
+  "name": "Enter River Check - S>N",
+  "prefabId": "f98661d0-5c83-44e7-a1da-de8e1256f7d0",
+  "x": 14,
+  "y": 22,
+  "symbol": "trigger_2",
+  "prefabScriptOverrides": {},
+  "width": 2,
+  "height": 1,
+  "script": [
+    {
+      "command": "EVENT_IF",
+      "args": {
+        "condition": {
+          "type": "eq",
+          "valueA": {
+            "type": "variable",
+            "value": "0"
+          },
+          "valueB": {
+            "type": "number",
+            "value": 0
+          }
+        },
+        "__collapseElse": false
+      },
+      "children": {
+        "true": [],
+        "false": [
+          {
+            "command": "EVENT_IF",
+            "args": {
+              "condition": {
+                "type": "variable",
+                "value": "1"
+              },
+              "__collapseElse": false,
+              "__disableElse": false
+            },
+            "children": {
+              "true": [
+                {
+                  "command": "EVENT_SET_VALUE",
+                  "args": {
+                    "variable": "0",
+                    "value": {
+                      "type": "false"
+                    }
+                  },
+                  "id": "438e37e5-ec3f-435a-8664-49cb6380f1a4"
+                }
+              ],
+              "false": [
+                {
+                  "command": "EVENT_SET_VALUE",
+                  "args": {
+                    "variable": "0",
+                    "value": {
+                      "type": "true"
+                    }
+                  },
+                  "id": "6720ecd1-fb85-47c5-92e5-b7e5c1974e24"
+                }
+              ]
+            },
+            "id": "c96b2fd2-c49b-400b-9afe-fec7a97f7c3b"
+          },
+          {
+            "command": "EVENT_ACTOR_MOVE_RELATIVE",
+            "args": {
+              "actorId": "$self$",
+              "x": {
+                "type": "number",
+                "value": 0
+              },
+              "y": {
+                "type": "number",
+                "value": -2
+              },
+              "moveType": "horizontal",
+              "useCollisions": false
+            },
+            "id": "913004ef-12a9-4b43-b3ad-4278f59add08"
+          }
+        ]
+      },
+      "id": "cbd85aa4-a72c-44b7-9db6-113ec2dbad89"
+    }
+  ],
+  "leaveScript": [],
+  "_index": 1
+}

@@ -1,0 +1,15 @@
+{
+  "_resourceType": "font",
+  "id": "524f955e-dd3c-47ef-9809-2566515c4458",
+  "name": "Aoba Dialogue",
+  "symbol": "font_aoba_dialogue",
+  "width": 128,
+  "height": 112,
+  "filename": "font-mc.png",
+  "mapping": {
+    "﹩": 36,
+    "あ": 208,
+    "お": 227,
+    "え": 228
+  }
+}

@@ -8,5 +8,6 @@
   "imageWidth": 160,
   "imageHeight": 144,
   "filename": "cutscene_campfire.png",
-  "tileColors": "00cc+803+0099+"
+  "tileColors": "0750+016d+02!01e+813+01!023+0111+023+0181+",
+  "autoColor": false
 }

@@ -1,0 +1,42 @@
+{
+  "_resourceType": "script",
+  "id": "784ecc69-49c0-4bd1-bc93-07b30674ace3",
+  "name": "Init Game",
+  "description": "",
+  "variables": {},
+  "actors": {},
+  "symbol": "script_2",
+  "script": [
+    {
+      "command": "EVENT_SET_VALUE",
+      "args": {
+        "variable": "0",
+        "value": {
+          "type": "number",
+          "value": 0
+        }
+      },
+      "id": "f27e928a-293f-48ae-a6a3-d313259c34d9"
+    },
+    {
+      "command": "EVENT_SET_VALUE",
+      "args": {
+        "variable": "1",
+        "value": {
+          "type": "true"
+        }
+      },
+      "id": "224db798-86e8-4abc-a45b-21f73405fa74"
+    },
+    {
+      "command": "EVENT_SET_VALUE",
+      "args": {
+        "variable": "2",
+        "value": {
+          "type": "true"
+        }
+      },
+      "id": "15d753cc-b8e5-4adb-b1b1-0f1c616a1be9"
+    }
+  ]
+}

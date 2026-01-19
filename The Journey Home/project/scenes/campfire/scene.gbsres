@@ -10,12 +10,72 @@
   "type": "ADVENTURE",
   "paletteIds": [],
   "spritePaletteIds": [],
-  "collisions": "0074+0f2+0012+0f2+0032+0f2+003+0f2+00d+0f2+003+0f2+009+0f3+0011+0f3+0071+",
+  "collisions": "00168+",
   "autoFadeSpeed": 1,
   "symbol": "scene_1",
-  "x": 296,
-  "y": 30,
-  "script": [],
+  "x": 568,
+  "y": 40,
+  "script": [
+    {
+      "command": "EVENT_IF",
+      "args": {
+        "condition": {
+          "type": "not",
+          "value": {
+            "type": "variable",
+            "value": "2"
+          }
+        },
+        "__collapseElse": true,
+        "__disableElse": true
+      },
+      "children": {
+        "true": [
+          {
+            "command": "EVENT_CALL_CUSTOM_EVENT",
+            "args": {
+              "customEventId": "784ecc69-49c0-4bd1-bc93-07b30674ace3"
+            },
+            "id": "56364e88-47a6-4e50-8180-405b0931bed5"
+          }
+        ],
+        "false": []
+      },
+      "id": "f4d3c609-cb1e-417c-8ed2-76a6353bf0b0"
+    },
+    {
+      "command": "EVENT_SET_INPUT_SCRIPT",
+      "args": {
+        "input": [
+          "select"
+        ],
+        "override": true,
+        "__scriptTabs": "press"
+      },
+      "children": {
+        "true": [
+          {
+            "command": "EVENT_SWITCH_SCENE",
+            "args": {
+              "sceneId": "7ec27336-308a-4abd-a414-2800e1d60e5b",
+              "x": {
+                "type": "number",
+                "value": 11
+              },
+              "y": {
+                "type": "number",
+                "value": 5
+              },
+              "direction": "",
+              "fadeSpeed": "2"
+            },
+            "id": "ed5d8ef9-bdbc-49c3-b945-045068779511"
+          }
+        ]
+      },
+      "id": "6b0f7fab-1f99-4e1b-b89a-8cb19f7bf613"
+    }
+  ],
   "playerHit1Script": [],
   "playerHit2Script": [],
   "playerHit3Script": [],
