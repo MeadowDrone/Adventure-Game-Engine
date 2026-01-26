@@ -4,7 +4,26 @@ export const groups = ["EVENT_GROUP_DIALOGUE"];
 export const name = "Dialogue - MC";
 
 // Portrait
-var normalCharsWide = "あÑÑÑÑÒ\nàááááâ\nàááááâ\nàááááâ\nàááááâ\nðñòòòò";
+/*
+Mapping:
+Chars:
+32 - 47
+48 - 63
+64 - 79
+80 - 95
+96 - 111
+112 - 127
+128 - 143
+144 - 159
+Portraits:
+160 - 175
+176 - 191
+192 - 207
+208 - 223
+224 - 239
+240 - 255
+*/
+var normalCharsWide = "あえいおう\nかけきこく\nたてちとつ\nられりろる\nはへひほふ\nばべびぼぶ";
 
 var normalChars = "あÑÒ\nàáâ\nðñò";
 var smileChars = "ÓÔÕ\nおえå\nóôõ";
@@ -15,14 +34,14 @@ var fifthChars = "ÜÝÞ\nìíî\nüýþ"
 export const avatarOrientation = "left";
 export const avatarX = 1;
 export const avatarY = 1;
-export const avatarWidth = 7;
+export const avatarWidth = 6;
 
 // Text
 export const textSpeed = 3;
 export const fontPrefix = "\\002\\001";
 
 // Name Tag
-export const nameTag = fontPrefix + "ÀÁÂÃ";
+export const nameTag = fontPrefix + "しそす";
 export const nameX = 16;
 
 // UI

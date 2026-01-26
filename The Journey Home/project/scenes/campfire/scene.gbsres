@@ -13,7 +13,7 @@
   "collisions": "0f!002+0f12+002+0f12+002+0f12+002+0f12+002+0f2+00b+0f5+002+0f2+0067+0f3+0095+",
   "autoFadeSpeed": 1,
   "symbol": "scene_1",
-  "x": 568,
+  "x": 560,
   "y": 40,
   "script": [
     {
@@ -79,7 +79,7 @@
       "command": "EVENT_DIALOGUE_MC_NEW",
       "args": {
         "text": [
-          "fasdfasdf\nasd\nfdasf"
+          "fasdfasdf"
         ],
         "portraitType": "normal"
       },
