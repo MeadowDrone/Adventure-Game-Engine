@@ -10,7 +10,7 @@
   "type": "ADVENTURE",
   "paletteIds": [],
   "spritePaletteIds": [],
-  "collisions": "00168+",
+  "collisions": "0f!002+0f12+002+0f12+002+0f12+002+0f12+002+0f2+00b+0f5+002+0f2+0067+0f3+0095+",
   "autoFadeSpeed": 1,
   "symbol": "scene_1",
   "x": 568,
@@ -74,6 +74,16 @@
         ]
       },
       "id": "6b0f7fab-1f99-4e1b-b89a-8cb19f7bf613"
+    },
+    {
+      "command": "EVENT_DIALOGUE_MC_NEW",
+      "args": {
+        "text": [
+          "fasdfasdf\nasd\nfdasf"
+        ],
+        "portraitType": "normal"
+      },
+      "id": "07c26de1-ba5f-4f50-834d-2d68917b3c73"
     }
   ],
   "playerHit1Script": [],

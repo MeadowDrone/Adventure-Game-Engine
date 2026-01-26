@@ -4,6 +4,8 @@ export const groups = ["EVENT_GROUP_DIALOGUE"];
 export const name = "Dialogue - MC";
 
 // Portrait
+var normalCharsWide = "あÑÑÑÑÒ\nàááááâ\nàááááâ\nàááááâ\nàááááâ\nðñòòòò";
+
 var normalChars = "あÑÒ\nàáâ\nðñò";
 var smileChars = "ÓÔÕ\nおえå\nóôõ";
 var expressionlessChars = "Ö×Ø\næçè\nö÷ø";
@@ -11,9 +13,9 @@ var blushChars = "ÙÚÛ\néêë\nùúû";
 var fifthChars = "ÜÝÞ\nìíî\nüýþ"
 
 export const avatarOrientation = "left";
-export const avatarX = 2;
-export const avatarY = 2;
-export const avatarWidth = 4;
+export const avatarX = 1;
+export const avatarY = 1;
+export const avatarWidth = 7;
 
 // Text
 export const textSpeed = 3;
@@ -62,22 +64,31 @@ export const compile = (input, helpers) => {
   paletteSetUI(paletteName);
 
   var avatarMap = {
-    normal: normalChars,
+    normal: normalCharsWide,
     smile: smileChars,
     expressionless: expressionlessChars,
     blush: blushChars,
   };
   var avatarChars = fontPrefix + avatarMap[input.portraitType];
 
+  // Add new line characters
   input.text.forEach((e, i) => {
+    if (i === input.text.length - 1) return;
     input.text[i] += "\n".repeat(
-      Math.max(
-        (avatarChars.match(/\n/g) || []).length -
-          (e.match(/\n/g) || []).length,
-        0
-      )
+      Math.max((avatarChars.match(/\n/g) || []).length - (e.match(/\n/g) || []).length, 0)
     );
   });
+
+  // Pad extra new lines to enforce dialog height
+  input.text.forEach((e, i) => {
+    var newLineCount = input.text[i].split("\n").length;
+    while(newLineCount < 4) {
+      input.text[i] += "\n";
+      newLineCount += 1;
+    }
+  });
+
+  // Replace new lines with octant codes
   [...avatarChars.matchAll(/\n/g)].forEach((e, i) => {
     avatarChars = avatarChars.replace(
       "\n",
@@ -88,6 +99,7 @@ export const compile = (input, helpers) => {
   // Select font by prepending prefix
   input.text[0] = fontPrefix + input.text[0];
 
+  // Display dialog
   textDialogue(
     input.text.map(
       (e) =>
@@ -108,4 +120,6 @@ module.exports = {
   compile,
   waitUntilAfterInitFade: true,
 };
+
+// Convert to octant code
 const oct = num => ((256 + (num % 256)) % 256).toString(8).padStart(3, "0");
