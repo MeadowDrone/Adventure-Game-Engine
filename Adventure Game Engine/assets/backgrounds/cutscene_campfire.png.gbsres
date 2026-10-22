@@ -1,0 +1,13 @@
+{
+  "_resourceType": "background",
+  "id": "e445a987-44f6-49a7-a5fa-dac9f2b93652",
+  "name": "cutscene_campfire",
+  "symbol": "bg_cutscene_campfire",
+  "tileColors": "055+03f+055+03f+055+03f+055+03f+055+03f+055+01b+059+018+002+01!854+01d+002+01!854+002+01e+854+002+015+022+82!022+014+854+002+015+026+013+854+00!016+026+013+004+017+026+014+004+0111+004+0110+0011+075+0010+074+0011+073+",
+  "filename": "cutscene_campfire.png",
+  "width": 20,
+  "height": 18,
+  "imageWidth": 160,
+  "imageHeight": 144,
+  "autoColor": false
+}

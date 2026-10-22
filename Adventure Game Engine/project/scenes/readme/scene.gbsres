@@ -1,0 +1,31 @@
+{
+  "_resourceType": "scene",
+  "id": "a6fcad33-0d33-46f7-95ab-2612f2902eff",
+  "_index": 2,
+  "name": "Readme",
+  "backgroundId": "9b03fbbc-39e6-40e3-aa2e-230ac98480d9",
+  "tilesetId": "",
+  "width": 20,
+  "height": 18,
+  "type": "LOGO",
+  "colorModeOverride": "none",
+  "paletteIds": [],
+  "spritePaletteIds": [],
+  "collisions": "",
+  "autoFadeSpeed": 1,
+  "symbol": "scene_3",
+  "x": 60,
+  "y": 48,
+  "script": [
+    {
+      "command": "EVENT_COMMENT",
+      "args": {
+        "text": "THINGS TO SET:\n- initGame!\n- Configure your character UI palettes\n- Load your font order with a dialogue, and type !F(...)"
+      },
+      "id": "1e526d68-6ded-4ce3-b16d-1215634087bd"
+    }
+  ],
+  "playerHit1Script": [],
+  "playerHit2Script": [],
+  "playerHit3Script": []
+}

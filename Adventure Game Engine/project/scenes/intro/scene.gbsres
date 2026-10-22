@@ -1,0 +1,113 @@
+{
+  "_resourceType": "scene",
+  "id": "56006024-111e-4672-8345-8f42d5d5d851",
+  "_index": 1,
+  "type": "ADVENTURE",
+  "name": "Intro",
+  "symbol": "scene_4",
+  "x": 416,
+  "y": 48,
+  "width": 20,
+  "height": 18,
+  "backgroundId": "9b03fbbc-39e6-40e3-aa2e-230ac98480d9",
+  "tilesetId": "",
+  "colorModeOverride": "none",
+  "paletteIds": [
+    "617b0c47-9d7f-4ea9-8656-ee7b68c2b137"
+  ],
+  "spritePaletteIds": [],
+  "autoFadeSpeed": 1,
+  "autoFadeEventCollapse": true,
+  "playerSpriteSheetId": "1b9154b0-2a7d-425a-b88c-ee5981f5730c",
+  "script": [
+    {
+      "command": "EVENT_ACTOR_DEACTIVATE",
+      "args": {
+        "actorId": "$self$",
+        "__collapse": true
+      },
+      "id": "0c052304-6d8f-4f59-9fed-1d18321990ee"
+    },
+    {
+      "command": "EVENT_IDLE",
+      "args": {},
+      "id": "e81e4b77-b577-43af-9225-8d19fba20348"
+    },
+    {
+      "command": "EVENT_COMMENT",
+      "args": {
+        "text": "The below dialogue loads the fonts in the game. They need to be loaded in a particular order."
+      },
+      "id": "7016ea38-b540-4f43-ac3b-5eaf527a3231"
+    },
+    {
+      "command": "EVENT_TEXT",
+      "args": {
+        "text": [
+          "!F:524f955e-dd3c-47ef-9809-2566515c4458!B!F:72adb774-760b-4916-a2f0-9ee1170810e0!e!F:fd2033b0-bdc0-453c-b5d1-84b228e9c3dc!g!F:7ff791e5-868c-493b-af33-838115ed987b!in"
+        ],
+        "__section": "text",
+        "avatarId": "",
+        "minHeight": 4,
+        "maxHeight": 7,
+        "textX": 1,
+        "textY": 1,
+        "textHeight": 5,
+        "position": "bottom",
+        "clearPrevious": true,
+        "showFrame": "true",
+        "speedIn": -1,
+        "speedOut": -1,
+        "closeWhen": "key",
+        "closeButton": "a",
+        "closeDelayTime": 0.5,
+        "closeDelayFrames": 30
+      },
+      "id": "66b2735f-da83-47f0-9a8d-82da55f44f44"
+    },
+    {
+      "command": "EVENT_C1_DIALOGUE",
+      "args": {
+        "text": [
+          "gfdfqaaa"
+        ],
+        "portraitType": "normal"
+      },
+      "id": "014c54b7-e8ca-42ad-996e-e83b9b50cae5"
+    },
+    {
+      "command": "EVENT_C2_DIALOGUE",
+      "args": {
+        "text": [
+          "gsdf"
+        ],
+        "portraitType": "normal"
+      },
+      "id": "00a94df7-43ab-4e8e-a0f3-bafc3574acb2"
+    },
+    {
+      "command": "EVENT_C3_DIALOGUE",
+      "args": {
+        "text": [
+          "3333"
+        ],
+        "portraitType": "normal"
+      },
+      "id": "6ff92868-21e7-4ac7-982d-d29600f85167"
+    },
+    {
+      "command": "EVENT_C4_DIALOGUE",
+      "args": {
+        "text": [
+          "4444"
+        ],
+        "portraitType": "normal"
+      },
+      "id": "23fca4fa-fb4e-4b58-8b38-53cb2da65b2c"
+    }
+  ],
+  "playerHit1Script": [],
+  "playerHit2Script": [],
+  "playerHit3Script": [],
+  "collisions": ""
+}
